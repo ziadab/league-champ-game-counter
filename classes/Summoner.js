@@ -42,11 +42,13 @@ class Summoner {
   }
 }
 
-async function main() {
-  const player = new Summoner("zaino02", "euw", 55);
-  await player.getBasicData();
-  const number = await player.getTheNumberOfGame();
-  console.log(number);
-}
+module.exports = Summoner;
 
-main();
+// async function main() {
+//   const player = new Summoner("zaino02", "euw", 55);
+//   await player.getBasicData();
+//   const number = await player.getTheNumberOfGame();
+//   console.log(number);
+// }
+
+// main();
